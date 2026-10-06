@@ -22,7 +22,9 @@ SELECT
 FROM 
     `tidy-elf-498016-j2.med_project.med_table`
 GROUP BY 
-    Condition;
+    Condition
+ORDER BY
+    avg_cost DESC;
 ```
 
 ### 2. Gender Distribution Analysis
