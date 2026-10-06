@@ -19,7 +19,7 @@ SELECT
     COUNT(Patient_ID) AS Total_Patients,
     ROUND(AVG(Cost), 2) AS avg_cost
 FROM 
-    `project_name.medical_project.hospital_data`
+    `tidy-elf-498016-j2.med_project.med_table`
 GROUP BY 
     Condition
 
@@ -31,7 +31,7 @@ SELECT
     COUNT(Patient_ID) AS Total_Patients,
     ROUND(AVG(Cost), 2) AS Avg_Cost
 FROM 
-    `project_name.medical_project.hospital_data`
+    `tidy-elf-498016-j2.med_project.med_table`
 GROUP BY 
     Condition, Gender
 ORDER BY 
@@ -44,7 +44,7 @@ ORDER BY
     COUNT(Patient_ID) AS Total_Patients,
     ROUND(AVG(Cost), 2) AS Avg_Cost
 FROM 
-    `project_name.medical_project.hospital_data`
+    `tidy-elf-498016-j2.med_project.med_table`
 GROUP BY 
     Length_of_Stay
 ORDER BY 
@@ -56,7 +56,7 @@ SELECT
     Outcome,
     COUNT(Patient_ID) AS total_patients
 FROM 
-    `project_name.medical_project.hospital_data`
+    `tidy-elf-498016-j2.med_project.med_table`
 GROUP BY 
     Outcome
 ORDER BY 
