@@ -25,10 +25,11 @@ GROUP BY
     Condition
 ORDER BY 
     avg_cost DESC;
+```
 
 ### 2. Gender Distribution Analysis
 A check to see how patients and costs are distributed based on gender and medical condition.
-sql
+```sql
 SELECT 
     Condition,
     Gender,
@@ -40,11 +41,11 @@ GROUP BY
     Condition, Gender
 ORDER BY 
     Condition ASC;
-
+```
 
  ### 3.Length of Stay vs. Costs Correlation
  An analysis tracking the impact of the number of days spent in the hospital on average costs.
-sql
+```sql
  SELECT 
     Length_of_Stay,
     COUNT(Patient_ID) AS Total_Patients,
@@ -55,11 +56,11 @@ GROUP BY
     Length_of_Stay
 ORDER BY 
     Length_of_Stay ASC;
-
+```
 
 ### 4. Treatment Outcome Analysis
 Patient counts grouped by their discharge status (e.g, Stable or Recovered).
-sql
+```sql
 SELECT 
     Outcome,
     COUNT(Patient_ID) AS total_patients
@@ -69,6 +70,7 @@ GROUP BY
     Outcome
 ORDER BY 
     total_patients DESC;
+```
 
 ORDER BY 
     avg_cost DESC;
