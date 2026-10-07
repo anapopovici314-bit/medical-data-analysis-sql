@@ -71,4 +71,5 @@ GROUP BY
 ORDER BY 
     total_patients DESC;
 ```
-
+## 📈 Power BI Dashboard Preview
+![Dashboard Preview](Screenshot 2026-10-07 214839.png)
