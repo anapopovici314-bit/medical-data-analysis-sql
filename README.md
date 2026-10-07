@@ -72,5 +72,3 @@ ORDER BY
     total_patients DESC;
 ```
 
-ORDER BY 
-    avg_cost DESC;
